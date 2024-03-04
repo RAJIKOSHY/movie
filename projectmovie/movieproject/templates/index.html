@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% for i in movielist %}
+<a href="{% url 'movieapp:details' i.id %}">{{i.name}}<br>
+{% endfor %}
+{% endblock %}
